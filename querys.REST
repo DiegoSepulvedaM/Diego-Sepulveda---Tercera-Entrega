@@ -1,0 +1,27 @@
+DELETE http://localhost:8080/api/products/d639b4aa-3b9b-4b61-b57f-2fb3457eebe4
+
+###
+PUT http://localhost:8080/api/products/d639b4aa-3b9b-4b61-b57f-2fb3457eebe4
+Content-Type: application/json
+
+{
+    "status": true,
+    "title": "Remera Polo",
+    "description": "Remera Polo",
+    "price": "20000",
+    "thumbnails": [
+        "polo-label-0132-5791221-4-product.webp"
+    ],
+    "code": "REMEPOLO",
+    "stock": "2",
+    "category": "Remeras"
+}
+
+###
+GET http://localhost:8080/api/carts/0a57cf4f-7bcd-4c9f-bf75-4746b7d09100
+
+###
+DELETE http://localhost:8080/api/carts/0a57cf4f-7bcd-4c9f-bf75-4746b7d09100/products/645ad03e32d3d81586ef6970
+
+###
+GET http://localhost:8080/api/carts/0a57cf4f-7bcd-4c9f-bf75-4746b7d09100/purchase
